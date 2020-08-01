@@ -29,8 +29,10 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const url = 'https://reactflixx.herokuapp.com/categorias';
-    fetch(url)
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://reactflixx.herokuapp.com/categorias';
+    fetch(URL)
       .then(async (response) => {
         const resposta = await response.json();
         setCategoria([
