@@ -1,16 +1,171 @@
 {
-    "categorias": [
-        {
-        "id": 1,
-        "nome": "Front End",
-        "descricao": "Uma categoria show",
-        "cor": "#cbd1ff"
-        },
-        {
-            "id": 2,
-            "nome": "Back End",
-            "descricao": "Outra categoria show",
-            "cor": "#cbd1ff"
-            }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Front End",
+      "descricao": "Uma categoria show",
+      "cor": "#cbd1ff",
+      "link_extra": {
+        "text": "Formação de FrontEnd",
+        "url": "https://www.alura.com.br/formacoes"
+      }
+    },
+    {
+      "id": 2,
+      "titulo": "Back End",
+      "descricao": "Outra categoria show",
+      "cor": "#cbd1ff"
+    },
+    {
+      "id": 3,
+      "titulo": "Java",
+      "descricao": "Linguagem Java",
+      "cor": "#cbd1ff"
+    },
+    {
+      "id": 4,
+      "titulo": "PHP",
+      "descricao": "Linguagem orientada a objetos",
+      "cor": "#cbd1ff"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "FrontEnd",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Front-End",
+      "url": "https://www.youtube.com/watch?v=WbsnmNWpKy4"
+    },
+    {
+      "id": 3,
+      "categoriaId": 2,
+      "titulo": "VIDEO DE BACKEND",
+      "url": "https://www.youtube.com/watch?v=TJ90DZjYdWI"
+    },
+    {
+      "id": 4,
+      "categoriaId": 3,
+      "titulo": "VIDEO DE JAVA",
+      "url": "https://www.youtube.com/watch?v=HEdPX8pt_DQ"
+    },
+    {
+      "id": 5,
+      "categoriaId": 4,
+      "titulo": "Vídeo de PHP",
+      "url": "https://www.youtube.com/watch?v=wCZ5TJCBWMg"
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?time_continue=2573&v=hhQ3RtvmfEg&feature=emb_logo",
+      "categoriaId": 1,
+      "id": 6
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "categoriaId": 1,
+      "id": 7
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "categoriaId": 1,
+      "id": 8
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "categoriaId": 2,
+      "id": 9
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "categoriaId": 2,
+      "id": 10
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "categoriaId": 2,
+      "id": 11
+    },
+    {
+      "titulo": "Vídeo backEnd",
+      "url": "https://www.youtube.com/watch?v=e1tZUSriYM8",
+      "categoriaId": 2,
+      "id": 12
+    },
+    {
+      "titulo": "Jake Bugg",
+      "url": "https://www.youtube.com/watch?v=wFpx_T6G8Lo",
+      "categoriaId": 2,
+      "id": 13
+    },
+    {
+      "titulo": "Jake Bugg",
+      "url": "https://www.youtube.com/watch?v=wFpx_T6G8Lo",
+      "categoriaId": "",
+      "id": 14
+    },
+    {
+      "titulo": "Jake Bugg",
+      "url": "https://www.youtube.com/watch?v=wFpx_T6G8Lo",
+      "id": 15
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "id": 16
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "id": 17
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "id": 18
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "id": 19
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "id": 20
+    },
+    {
+      "titulo": "Video padrão",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
+      "categoriaId": 1,
+      "id": 21
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "id": 22
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "categoriaId": 1,
+      "id": 23
+    },
+    {
+      "titulo": "Vídeo padrão",
+      "url": "https://www.youtube.com/watch?v=qPYCnebQQ6U",
+      "categoriaId": 1,
+      "id": 24
+    }
+  ]
 }

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -11,22 +12,12 @@ function CadastroCategoria() {
     descricao: '',
     cor: '',
   };
+
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategoria] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
 
   // Chave: nome, descricao, bla
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor, // nome: 'valor'
-    });
-  }
-  function handleChange(infosDoEvento) {
-    // eslint-disable-next-line no-unused-vars
-    const { getAttribute, value } = infosDoEvento.target;
-    setValue(infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value);
-  }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
@@ -71,13 +62,12 @@ function CadastroCategoria() {
           ...categorias,
           values,
         ]);
-        setValues(valoresIniciais);
+        clearForm();
       }}
       >
 
         <FormField
           label="Nome da categoria"
-          // type="text"
           name="nome"
           value={values.nome}
           onChange={handleChange}
@@ -105,15 +95,15 @@ function CadastroCategoria() {
       </form>
 
       {categorias.length === 0 && (
-      <div>
-        Carregando categorias..
-      </div>
+        <div>
+          Carregando categorias..
+        </div>
       )}
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>

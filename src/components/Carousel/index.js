@@ -5,7 +5,6 @@ import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
 
 function Carousel({
-  // eslint-disable-next-line react/prop-types
   ignoreFirstVideo,
   category,
 }) {
